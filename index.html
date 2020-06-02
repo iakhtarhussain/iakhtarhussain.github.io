@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  	<script language="javascript">
+  <!--
+  if(!window.location.search.substring(1) == "full=true") { // do not redirect if querystring is ?full=true
+    if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/Blackberry/i) || navigator.userAgent.match(/WebOs/i)) { // detect mobile browser
+      window.location.replace(mobile.html); // redirect if mobile browser detected
+    }
+  }
+  -->
+</script>
     <title>Akhtar Hussain</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -50,7 +59,7 @@
 	    </div>
 	  </nav>
 	  <section id="home-section" class="hero">
-	  	  <div id=”content-desktop”>
+
 		  <div class="home-slider  owl-carousel">
 	      <div class="slider-item ">
 	      	<div class="overlay"></div>
@@ -90,7 +99,6 @@
 	        </div>
 	      </div>
 	    </div>
-	</div>
     </section>
 
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
