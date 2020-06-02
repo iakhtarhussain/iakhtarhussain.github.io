@@ -4,7 +4,17 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+    #content-desktop {display: block;}
+    #content-mobile {display: none;}
+
+    @media screen and (max-width: 768px) {
+
+    #content-desktop {display: none;}
+    #content-mobile {display: block;}
+
+    }
 :root {
+
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
