@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
   	<script language="javascript">
   <!--
-  if(!window.location.search.substring(1) == "full=true") { // do not redirect if querystring is ?full=true
-    if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/Blackberry/i) || navigator.userAgent.match(/WebOs/i)) { // detect mobile browser
-      window.location.replace("https://iakhtarhussain.github.io/mobile"); // redirect if mobile browser detected
-    }
-  }
+  var viewMode = getCookie("view-mode");
+if(viewMode == "desktop"){
+   viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
+}else if (viewMode == "mobile"){
+	 viewport.setAttribute('content', 'width=1024');
+    
+}
   -->
+<html lang="en">
+  <head>
 </script>
     <title>Akhtar Hussain</title>
     <meta charset="utf-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
 <link rel = "icon" href = images/favicon.ico
