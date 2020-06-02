@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  	<script language="javascript">
-  <!--
-  if(!window.location.search.substring(1) == "full=true") { // do not redirect if querystring is ?full=true
-    if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/Blackberry/i) || navigator.userAgent.match(/WebOs/i)) { // detect mobile browser
-      window.location.replace('https://iakhtarhussain.github.io/mobile'); // redirect if mobile browser detected
-    }
-  }
-  -->
-</script>
     <title>Akhtar Hussain</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -653,7 +644,7 @@
         </div>
         <div class="row">
           <div class="col-md-12 text-center">
-          	 <p><a href="iakhtarhussain.github.io/mobile">mobile version</a></p>
+          	 <p><a href="iakhtarhussain.github.io/">desktop version</a></p>
 
             <p>
   Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://farhancode.github.io" target="_blank">Farhan Akhtar</a>
@@ -668,7 +659,10 @@
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
-
+  <script type="text/javascript">
+  if (!(navigator.userAgent.match(/iPhone/i)) || !(navigator.userAgent.match(/iPod/i) || !(navigator.userAgent.match(/android/i)))) {
+     location.replace("iakhtarhussain.github.io/mobile");
+  }
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
